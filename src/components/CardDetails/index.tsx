@@ -206,7 +206,7 @@ export const CardDetails = ({ cartItems }: CartDetailsPropsI) => {
       </div>
 
       <button className="card-details-checkout mt-26" onClick={handleCheckout}>
-        $1,672
+        {total}
         <p>
           Checkout
           <img src={rightArr} alt="right arr" />
