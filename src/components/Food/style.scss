@@ -1,0 +1,48 @@
+.food-card {
+  flex: 1;
+  min-width: 470px;
+  display: flex;
+  gap: 18px;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: var(--shadow-1);
+  cursor: pointer;
+
+  &.active {
+    border: 2px solid var(--color-orange-1);
+  }
+
+  img {
+    width: 160px;
+    object-fit: cover;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    font-weight: 500;
+    min-width: 200px;
+    color: var(--color-black-1);
+  }
+
+  &-name {
+    font-family: var(--font-poppins);
+    font-size: 28px;
+  }
+
+  &-ingredient {
+    font-family: var(--font-nunito);
+    font-size: 24px;
+  }
+
+  &-price {
+    align-self: flex-end;
+    margin-top: auto;
+    font-family: var(--font-poppins);
+    font-size: 24px;
+    color: var(--color-orange-1);
+  }
+}

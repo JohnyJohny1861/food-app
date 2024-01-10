@@ -1,0 +1,82 @@
+.cart-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 9px 23px 10px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: var(--color-white-1);
+  box-sizing: border-box;
+  box-shadow: var(--shadow-1);
+
+  &-img {
+    width: 80px;
+    box-sizing: border-box;
+  }
+
+  &-desc {
+    color: var(--color-black-1);
+    font-weight: 500;
+    min-width: 200px;
+    margin-right: 70px;
+
+    &-name {
+      font-family: var(--font-poppins);
+      font-size: 18px;
+    }
+
+    &-ingredient {
+      font-family: var(--font-nunito);
+      font-size: 14px;
+    }
+  }
+
+  &-count {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 38px;
+    color: var(--color-gray-2);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: var(--font-raleway);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22px;
+
+    &-amount {
+      min-width: 30px;
+      text-align: right;
+    }
+
+    &-arrows {
+      svg {
+        display: flex;
+        flex-direction: column;
+        user-select: none;
+      }
+      path {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-price {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    margin-right: 38px;
+    color: var(--color-gray-2);
+    text-align: right;
+    font-family: var(--font-poppins);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &-trash {
+    width: 25px;
+    flex-shrink: 0;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}

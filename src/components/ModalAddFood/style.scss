@@ -1,0 +1,31 @@
+.add-food-modal {
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  &-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  &-btn {
+    align-self: flex-end;
+    border: none;
+    border-radius: 12px;
+    padding: 18px 20px 18px 24px;
+    background: var(--color-green-1);
+    color: var(--color-white-2);
+    font-family: var(--font-poppins);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+
+    &.disabled {
+      background: var(--color-gray-1);
+      color: var(--color-white-2);
+      cursor: inherit;
+    }
+  }
+}

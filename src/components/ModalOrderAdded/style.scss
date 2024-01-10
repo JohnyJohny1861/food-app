@@ -1,0 +1,45 @@
+.orders-added {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 600px;
+  padding: 32px;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-1);
+
+    &-id {
+      min-width: 24px;
+      color: var(--color-gray-2);
+      font-family: var(--font-raleway);
+      font-size: 24px;
+      font-weight: 600;
+    }
+    &-names {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      max-width: 380px;
+      span {
+        font-family: var(--font-poppins);
+        font-size: 14px;
+        color: var(--color-black-2);
+        background-color: var(--color-gray-1);
+        padding: 6px;
+        border-radius: 6px;
+      }
+    }
+
+    &-total {
+      color: var(--color-black-2);
+      font-family: var(--font-poppins);
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
