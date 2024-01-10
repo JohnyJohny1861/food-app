@@ -3,7 +3,9 @@
   flex-direction: column;
   gap: 12px;
   width: 600px;
+  max-height: 90vh;
   padding: 32px;
+  overflow: auto;
 
   &-item {
     display: flex;
